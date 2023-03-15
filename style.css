@@ -1,0 +1,45 @@
+body {
+  background-image: url('https://images.alphacoders.com/435/435117.jpg');
+  opacity: 0.95;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+form {
+  background-color: #39c4ff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+select {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 13px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.answer{
+  font-size: large;
+  font-weight: bold;
+  color: red;
+}

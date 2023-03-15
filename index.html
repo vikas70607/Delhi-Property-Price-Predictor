@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delhi Property Price Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Delhi Property Price Predictor</h1>
+    <form>
+        <label for="Area">Area</label>
+        <input type="text" id="Area" name="Area" placeholder="Enter in sqaure feet" required>
+
+        <label for="BHK">BHK</label>
+        <select id="BHK" name="BHK">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="Bathroom">Bathroom</label>
+        <select id="Bathroom" name="Bathroom">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+        </select>
+
+        <label for="Furnishing">Furnishing</label>
+        <select id="Furnishing" name="Furnishing">
+            <option value=0>Furnished</option>
+            <option value=1>Semi-Furnished</option>
+            <option value=2>Unfurnished</option>
+        </select>
+
+        <label for="Parking">Parking</label>
+        <select id="Parking" name="Parking">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+        </select>
+
+        <label for="Transaction">Transaction</label>
+        <select id="Transaction" name="Transaction">
+            <option value=0>New Property</option>
+            <option value=1>Resale</option>
+        </select>
+
+        <label for="Type">Type</label>
+        <select id="Type" name="Type">
+            <option value=0>Apartment</option>
+            <option value=1>Builder Floor</option>
+        </select>
+
+        <button type="button" class="btn btn-warning m-3" onclick="predict()">Predict</button>
+        <p class="answer" id="answer"></p>
+    </form>
+</body>
+
+</html>
